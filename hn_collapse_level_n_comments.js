@@ -30,7 +30,7 @@
       }, timeout);
     }
   }
-  let indentSize = getNumberFromUser("2");
+  let indentSize = getNumberFromUser("3");
   let comments = document.querySelectorAll(`tr.athing td.ind[indent="${indentSize}"]`);
   for (let i = 0; i < comments.length; i++) toggleCollapseDelay(comments[i].parentElement.querySelector("a.togg.clicky").id, 5e2 * i)
 })();
